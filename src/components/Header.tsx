@@ -12,7 +12,7 @@ const Header: FC = () => {
                 <div className="flex gap-10">
                     <a href="/AboutUs">About Us</a>
                     <a href="/Services">Services</a>
-                    <a href="/contact">Teams</a>
+                    <a href="/Teams">Teams</a>
                 </div>
             </nav>
         </header>

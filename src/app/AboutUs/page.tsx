@@ -2,16 +2,21 @@
 import { FC } from "react";
 import Header from "@/components/Header";
 import History from '@/components/about/History'
-import Services from '@/components/about/Services'
+import Culture from '@/components/about/Culture'
 import Team from '@/components/about/Team'
 
 const AboutUs: FC = () => {
     return (
-        <div className="w-[1440px]">
+        <div className="flex flex-col w-[1440px] gap-[100px]">
             <Header />
+            <div className="flex justify-center pt-[120px] ">
+                <h1 className="text-5xl font-bold">About Us</h1>
+                
+            </div>
             <History />
-            <Services />
             <Team />
+            <Culture />
+            
       </div>
     )
 }
