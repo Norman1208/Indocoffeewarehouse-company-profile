@@ -10,8 +10,18 @@ import InspectionAI from '@/components/service/InspectionAI'
 
 const Services: FC  = () => {
     return (
-        <div className="w-[1440px]">
+        <div className="flex flex-col w-[1440px] gap-[100px]">
             <Header />
+            <div className="flex flex-col justify-center items-center pt-[120px] ">
+                <h1 className="text-5xl font-bold">Products & Services</h1>
+                <p className="text-center">At INDOCOFFEE WAREHOUSE, we provide innovative solutions designed to elevate 
+                    every stage of the coffee production and sourcing process. From ensuring 
+                    the highest quality of coffee beans to seamless business transactions 
+                    and round-the-clock support, our products and services are built to meet 
+                    the needs of the modern coffee industry. Here&apos;s a closer look at what we 
+                    offer:</p>
+            </div>
+            
             <AppsDesc />
             <CustomerSupport />
             <InspectionAI />
