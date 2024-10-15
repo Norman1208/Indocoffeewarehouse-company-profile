@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import AppsDesc from '@/components/service/AppsDesc'
 import CustomerSupport from '@/components/service/CustomerSupport'
 import InspectionAI from '@/components/service/InspectionAI'
+import Footer from '@/components/Footer'
 
 
 
@@ -25,6 +26,7 @@ const Services: FC  = () => {
             <AppsDesc />
             <CustomerSupport />
             <InspectionAI />
+            <Footer />
       </div>
     );
 }

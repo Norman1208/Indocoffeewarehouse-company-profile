@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Testimonials : FC = () => {
     return (
-        <div className="bg-[#AF8F6F] flex w-[1440px] p-[80px] gap-4">
+        <div className="bg-[#AF8F6F] flex p-[80px] gap-4">
             <div className="w-[839px] gap-0 font-montreal text-[40px] font-medium"> {/* left */}
                 Testimonials
             </div>

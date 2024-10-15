@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 export default function Page() {
   return (
     <>
-      <div id="HomePage" className="w-[1440px]">
+      <div id="HomePage" className="w-[100%]">
         <Header />
         <Hero />
         <Overview />
