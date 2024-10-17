@@ -1,14 +1,25 @@
-import { FC } from "react";
-
+import { FC, useState } from "react";
+import {Testimonials} from '@/components/service/AppsDescData';
+import {handleNextIndex, handlePrevIndex} from '@/components/service/indexNavigation';
 
 const AppsDesc: FC = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const handleNext = () => {
+        setCurrentIndex(handleNextIndex(currentIndex, Testimonials.length));
+    };
+
+    const handlePrev = () => {
+        setCurrentIndex(handlePrevIndex(currentIndex, Testimonials.length))
+    }
 
     return (
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 py-[50px]  bg-[#AF8F6F] justify-center items-center">
             <h1 className="font-bold text-2xl text-center">Trusted Coffee Buyer and Seller App</h1>
             <span className="text-center">Connecting the coffee world with trust and transparency.</span>
 
-            <p>Our Trusted Coffee Buyer and Seller App brings together coffee enthusiasts, 
+            <div className="flex flex-col gap-5 justify-center items-center w-[90%]">
+            <p className="text-center">Our Trusted Coffee Buyer and Seller App brings together coffee enthusiasts, 
                 producers, and suppliers into a secure and credible marketplace. Whether 
                 you&apos;re sourcing high-quality beans or finding trusted buyers, our platform
                  connects you with verified, like-minded partners. With built-in credibility 
@@ -26,17 +37,32 @@ const AppsDesc: FC = () => {
                     <li>Easy communication tools for direct connections between buyers and sellers</li>  
                 </ul>
             </div>
+            </div>
 
 
             <div>
-                <h1>Testimonials</h1>
-                <p>The Trusted Coffee Buyer and Seller app has transformed the way we do 
-                    business. It&apos;s so easy to find verified partners who share our commitment 
-                    to quality. Every transaction feels secure, and we&apos;ve built great 
-                    relationships with some amazing suppliers!</p>
-                <div>
-                    <h1>Daniel T.</h1>
-                    <span>Coffee Distributor</span>
+                
+                <div className="max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md text-center">
+                    <h1 className="font-bold text-center pb-3">Testimonials</h1>
+                    <div className="mb-6">
+                        <p className="text-lg text-gray-700">{Testimonials[currentIndex].message}</p>
+                        <p className="mt-4 font-bold text-gray-900">
+                            {Testimonials[currentIndex].name}, {Testimonials[currentIndex].role}
+                        </p>
+                    </div>
+                    <div className="flex justify-center items-center mt-6">
+                        <button
+                            onClick={handlePrev}
+                            className="px-4 py-2 bg-black text-white rounded-full hover:bg-green-600 duration-300 mr-2"
+                            >
+                                ◀
+                            </button>
+                        <button
+                            onClick={handleNext}
+                            className="px-4 py-2 bg-black text-white rounded-full hover:bg-green-600 duration-300 ml-2">
+                                ▶
+                            </button>
+                    </div>
                 </div>
             </div>
         </div>

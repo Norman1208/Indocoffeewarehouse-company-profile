@@ -13,8 +13,8 @@ const Testimonials : FC = () => {
             <div className="flex flex-col gap-4"> {/* right */}
                 <div className=""> {/* testimoni-wrapper */}
                     <div className="text-[27px]"> {/* testimoni */}
-                        "Thanks to INDOCOFFEE WAREHOUSE, our coffee operations have never been smoother! Their 24-hour support for our automation systems is exceptional and anytime we&apos;ve had an issue, 
-                        they&apos;ve been there immediately to resolve it. The quality and efficiency of our production have improved drastically, and I can&apos;t imagine running our business without them."
+                        &quot;Thanks to INDOCOFFEE WAREHOUSE, our coffee operations have never been smoother! Their 24-hour support for our automation systems is exceptional and anytime we&apos;ve had an issue, 
+                        they&apos;ve been there immediately to resolve it. The quality and efficiency of our production have improved drastically, and I can&apos;t imagine running our business without them.&quot;
                     </div>
                     <div className="flex gap-4"> {/* person wrapper */}
                         <Image src={testimonial1} className="w-[64px]" alt="testimonial1" />
@@ -28,8 +28,8 @@ const Testimonials : FC = () => {
 
                 <div className=""> {/* testimoni-wrapper */}
                     <div className="text-[27px]"> {/* testimoni */}
-                    "The Trusted Coffee Buyer and Seller app from INDOCOFFEE WAREHOUSE has been a game-changer for us. We&apos;ve built reliable partnerships with top-tier buyers, 
-                    all while feeling confident in the credibility of every transaction. Their focus on trust and transparency has taken the guesswork out of sourcing quality coffee!"
+                    &quot;The Trusted Coffee Buyer and Seller app from INDOCOFFEE WAREHOUSE has been a game-changer for us. We&apos;ve built reliable partnerships with top-tier buyers, 
+                    all while feeling confident in the credibility of every transaction. Their focus on trust and transparency has taken the guesswork out of sourcing quality coffee!&quot;
                     </div>
                     <div className="flex gap-4"> {/* person wrapper */}
                         <Image src={testimonial2} className="w-[64px]" alt="testimonial2" />
