@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
-import inspection from '@/assets/inspection.png';
+import inspection from '@/assets/Inspection.jpg';
 import apps from '@/assets/apps.png';
 import maintenance from '@/assets/maintenance.png';
 
