@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
-// import inspection from '@/assets/inspection.png';
+import inspection from '@/assets/inspection.png';
 import apps from '@/assets/apps.png';
 import maintenance from '@/assets/maintenance.png';
 
@@ -14,7 +14,7 @@ const Products: FC = () => {
 
             <div className="flex gap-5 justify-content-center items-center">
                 <div className="flex flex-col gap-5 w-[500px]">
-                    {/* <Image className="w-[100px] h-[100px]" src={inspection} alt="product1" /> */}
+                    <Image className="w-[100px] h-[100px]" src={inspection} alt="product1" />
                     <h1 className="font-bold text-2xl">End to End coffee inspection technology</h1>
                     <p>Our End-to-End Coffee Inspection Technology ensures exceptional coffee quality by utilizing advanced AI and 
                         sensors to analyze and select the finest beans from farm to roast. With full traceability and automated quality control, we optimize every step, 
