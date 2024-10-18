@@ -14,7 +14,7 @@ const History: FC = () => {
             <h1 className="text-[#F8F4E1] text-[40px] font-bold py-[30px] text-center">Our Journey: From Passion to Innovation</h1>
 
             <div > 
-                <div className="flex">
+                <div className="flex flex-col sm:flex-row">
                     <div className="w-[50%] justify-center items-center">
                         <div className="flex justify-center gap-3">
                             <Image src={img2021_2} alt="manual inspection" className="w-[30%]"/>
@@ -37,7 +37,7 @@ const History: FC = () => {
                     </div>
                 </div>
 
-                <div className="flex pt-10">
+                <div className="flex pt-10 flex-col-reverse sm:flex-row">
                     <div className="w-[50%] gap-2">
                         <h1 className="text-center font-bold">2022 : First Prototype Development</h1>
                         <p>In 2022, the first major step towards automating coffee bean inspection was 
@@ -58,7 +58,7 @@ const History: FC = () => {
                 </div>
 
 
-                <div className="flex pt-10">
+                <div className="flex pt-10 flex-col sm:flex-row">
                     
                     <div className="w-[50%] justify-center items-center">
                         <div className="flex justify-center gap-3">
@@ -80,7 +80,7 @@ const History: FC = () => {
                 </div>
 
 
-                <div className="flex pt-10">
+                <div className="flex pt-10 flex-col-reverse sm:flex-row">
                     <div className="w-[50%] gap-2">
                         <h1 className="text-center font-bold">2024 : Development Negative Pressure Suction For Faster Setup</h1>
                         <p>In 2024, further innovations were introduced with the integration of a negative

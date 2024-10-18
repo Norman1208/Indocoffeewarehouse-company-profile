@@ -2,20 +2,20 @@ import { FC } from "react";
 
 const Footer: FC = () => {
     return (
-        <div className="bg-[#543310] flex pt-[100px] pl-[50px] pr-10 gap-[50%] h-[70%]"> {/* footer */}
-            <div className="flex flex-col gap-[60px] w-[100%]"> {/* left */}
-                <div className="flex flex-col gap-5 w-[100%]">{/* top */}
-                    <span className="text-white text-6xl">Have Problems with Coffee Production or Inspection ?</span>
+        <div className="bg-[#543310] flex pt-[100px] pl-[50px] pr-10 h-[70%] w-[100%] pb-5"> {/* footer */}
+            <div className="flex flex-col pr-[5%]"> {/* left */}
+                <div className="flex flex-col gap-3">{/* top */}
+                    <span className="text-white text-3xl">Have Problems with Coffee Production or Inspection ?</span>
                     <div className="flex">
-                        <span className="text-white text-6xl">let’s build it together.</span>
+                        <span className="text-white text-3xl">let’s build it together.</span>
                     </div>
                 </div>
-                <div>{/* bottom */}
+                <div className="pt-[10%]">{/* bottom */}
                     <span className="text-white">Powered by Ganesha Indo Persada</span>
                 </div>
             </div>
 
-            <div className="flex flex-col gap-[70%]"> {/* right */}
+            <div className="flex flex-col gap-[40%]"> {/* right */}
                 <div className="flex pl-[100px]">{/* top */}
                     <button className="bg-white text-black rounded-full w-[100%] h-[70px] hover:text-bold">Get in touch</button>
                 </div>
