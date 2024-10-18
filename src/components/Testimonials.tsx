@@ -5,14 +5,14 @@ import Image from "next/image";
 
 
 const Testimonials : FC = () => {
-    return (
-        <div className="bg-[#AF8F6F] flex p-[80px] gap-4">
-            <div className="w-[839px] gap-0 font-montreal text-[40px] font-medium"> {/* left */}
+    return ( 
+        <div className="flex bg-[#AF8F6F] flex-col p-[80px] gap-4 sm:flex-row">
+            <div className="w-[30%] gap-0 text-4xl font-bold"> {/* left */}
                 Testimonials
             </div>
             <div className="flex flex-col gap-4"> {/* right */}
                 <div className=""> {/* testimoni-wrapper */}
-                    <div className="text-[27px]"> {/* testimoni */}
+                    <div className="text-[20px]"> {/* testimoni */}
                         &quot;Thanks to INDOCOFFEE WAREHOUSE, our coffee operations have never been smoother! Their 24-hour support for our automation systems is exceptional and anytime we&apos;ve had an issue, 
                         they&apos;ve been there immediately to resolve it. The quality and efficiency of our production have improved drastically, and I can&apos;t imagine running our business without them.&quot;
                     </div>
@@ -27,7 +27,7 @@ const Testimonials : FC = () => {
                 </div>
 
                 <div className=""> {/* testimoni-wrapper */}
-                    <div className="text-[27px]"> {/* testimoni */}
+                    <div className="text-[20px]"> {/* testimoni */}
                     &quot;The Trusted Coffee Buyer and Seller app from INDOCOFFEE WAREHOUSE has been a game-changer for us. We&apos;ve built reliable partnerships with top-tier buyers, 
                     all while feeling confident in the credibility of every transaction. Their focus on trust and transparency has taken the guesswork out of sourcing quality coffee!&quot;
                     </div>

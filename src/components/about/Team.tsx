@@ -11,8 +11,8 @@ const Team: FC = () => {
         <div >
             <div><h1 className="text-[#543310] text-[40px] font-bold py-[30px] text-center">Meet Our Founder</h1></div>
             
-            <div className="flex justify-center gap-5 px-5 w-[100%]">
-                <div className="flex flex-col gap-3 justify-center">
+            <div className="flex  flex-col justify-center gap-5 px-5 w-[100%] sm:flex-row">
+                <div className="flex flex-col gap-3 justify-center ">
                     <h1 className="font-bold">Achmad Norman Firdaus</h1>
                     <Image className="rounded-full w-[200px] h-[200px]" src={norman} alt="achmad"/>
                     <h2>Founder</h2>
