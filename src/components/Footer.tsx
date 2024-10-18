@@ -15,7 +15,7 @@ const Footer: FC = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col gap-[40%]"> {/* right */}
+            <div className="flex flex-col gap-[40%] mr-0"> {/* right */}
                 <div className="flex pl-[100px]">{/* top */}
                     <button className="bg-white text-black rounded-full w-[100%] h-[70px] hover:text-bold">Get in touch</button>
                 </div>

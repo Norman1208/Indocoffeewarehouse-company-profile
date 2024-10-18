@@ -12,7 +12,7 @@ const Products: FC = () => {
                 <h1>Products</h1>
             </div>
 
-            <div className="flex gap-5 justify-content-center items-center">
+            <div className="flex gap-5 justify-content-center items-center flex-col sm:flex-row">
                 <div className="flex flex-col gap-5 ">
                     <Image className="w-[100px] h-[100px]" src={inspection} alt="product1" />
                     <h1 className="font-bold text-2xl">End to End coffee inspection technology</h1>
